@@ -15,27 +15,5 @@
             </xpath>
         </field>
     </record>
-
-    <!-- <record model="ir.actions.server" id="action_clear_sent_time">
-        <field name="name">action sent time</field>
-        <field name="model_id" ref="account.model_account_move"/>
-        <field name="binding_model_id" ref="account.model_account_move"/>
-        <field name="state">code</field>
-        <field name="code"> action = records.action_update_invoice_date () </field>
-    </record>
-    <field name="binding_model_id" ref="account.model_account_move"/>
-    <field name="binding_view_types">list,form</field> -->
-    <!-- <record model="ir.actions.act_window" id="action_clear_sent_time"> -->
-        <!-- <field name="name">action sent time</field> -->
-        <!-- <field name="type">ir.actions.act_window</field> -->
-        <!-- <field name="res_model">project.task</field> -->
-        <!-- <field name="domain">[]</field> -->
-        <!-- <field name="view_type">form</field> -->
-        <!-- <field name="view_mode">tree,form</field> -->
-        <!-- <field name="view_id" ref="project.view_task_form2"/> -->
-        <!-- <field name="binding_model_id" ref="model_project_task"/> -->
-    <!-- </record> -->
-
     
-
 </odoo>
