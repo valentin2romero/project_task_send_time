@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record id="view_task_form2" model="ir.ui.view">
+        <field name="name">add sent time</field>
+        <field name="model">project.task</field>
+        <field name="inherit_id" ref="project.view_task_form2"/>
+        <field name="arch" type="xml">
+            <xpath expr="//header" position="inside">
+                <button name="clear_sent_time" string="Reset Time Sent" type="object" class="oe_highlight" data-hotkey="v" confirm="You are sure to restart the sent time?"/>
+            </xpath>
+            <xpath expr="//field[@name='tag_ids']" position="after">
+                <field name="it_was_sent"/>
+                <field name="sent_time" widget="timesheet_uom" readonly="1" force_save="1"/>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- <record model="ir.actions.server" id="action_clear_sent_time">
+        <field name="name">action sent time</field>
+        <field name="model_id" ref="account.model_account_move"/>
+        <field name="binding_model_id" ref="account.model_account_move"/>
+        <field name="state">code</field>
+        <field name="code"> action = records.action_update_invoice_date () </field>
+    </record>
+    <field name="binding_model_id" ref="account.model_account_move"/>
+    <field name="binding_view_types">list,form</field> -->
+    <!-- <record model="ir.actions.act_window" id="action_clear_sent_time"> -->
+        <!-- <field name="name">action sent time</field> -->
+        <!-- <field name="type">ir.actions.act_window</field> -->
+        <!-- <field name="res_model">project.task</field> -->
+        <!-- <field name="domain">[]</field> -->
+        <!-- <field name="view_type">form</field> -->
+        <!-- <field name="view_mode">tree,form</field> -->
+        <!-- <field name="view_id" ref="project.view_task_form2"/> -->
+        <!-- <field name="binding_model_id" ref="model_project_task"/> -->
+    <!-- </record> -->
+
+    
+
+</odoo>
