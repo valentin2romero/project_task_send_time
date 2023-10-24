@@ -1,5 +1,5 @@
 ========================================
-Hide fields in Checkout Page from Website Sale
+Indicate how many hours spent were reported in Task from Proyect
 ========================================
 
 .. |badge1| image:: https://img.shields.io/badge/maturity-Beta-yellow.png
