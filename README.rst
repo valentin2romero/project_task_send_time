@@ -1,5 +1,5 @@
 ========================================
-Indicate how many hours spent were reported in Task from Proyect
+How many hours spent were reported on the Project Task
 ========================================
 
 .. |badge1| image:: https://img.shields.io/badge/maturity-Beta-yellow.png
