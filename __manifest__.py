@@ -7,7 +7,7 @@
     "author": "Valentin Romero",
     "website": "",
     "depends": [
-        "base", "project"
+        "base", "project", "timesheet_grid"
     ],
     "data": [
         'views/project_task.xml',
